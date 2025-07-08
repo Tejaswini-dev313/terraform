@@ -13,7 +13,7 @@ variable "tags" {
     type = map
     default = {
         Name = "backend"
-        Project = expense
+        Project = "expense"
         Component = "backend"
         Environment = "DEV"
         Terraform = "true"
