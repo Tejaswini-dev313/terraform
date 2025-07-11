@@ -6,4 +6,6 @@ resource "aws_route53_record" "expense" {
     type = "A"
     ttl = 1
     records    = [aws_instance.expense[count.index].private_ip]
+    allow_overwrite = true 
 }
+
